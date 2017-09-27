@@ -6,7 +6,7 @@ package com.liuli.design.demo.state;
 public class StopState implements State {
     public void doAction(Context context) {
         System.out.println("Player is in stop state");
-        context.setState(this);
+        context.setState(START);
     }
 
     public String toString(){
