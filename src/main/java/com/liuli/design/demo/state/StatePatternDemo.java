@@ -6,6 +6,9 @@ package com.liuli.design.demo.state;
  * 策略模式只是提供算法实现，供上下文使用，耦合度低一些
  * 状态模式是上下文把对自身的调用委托给状态实现类执行，同时状态实现类也可能会关注或修改上下文的状态
  *
+ * 策略模式下client需要清楚自己选择什么策略得到什么结果
+ * 状态模式下client只是调用上下文的方法，具体使用哪个状态实现类和状态的切换对client是透明的，client也不需要选择
+ *
  * 涉及到状态的例子如Thread？但Thread并没有状态的实现类。
  */
 public class StatePatternDemo {
